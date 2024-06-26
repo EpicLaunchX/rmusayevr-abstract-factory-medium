@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from uuid import UUID
+from uuid import UUID, uuid4
 
 
 @dataclass
@@ -28,3 +28,7 @@ class Restaurant:
     uuid: UUID
     city: City
     dishes: list[Dish]
+
+
+def restaurant_factory(city: City, dishes: list[Dish]) -> Restaurant:
+    return Restaurant(uuid=uuid4(), dishes=dishes, city=city)
