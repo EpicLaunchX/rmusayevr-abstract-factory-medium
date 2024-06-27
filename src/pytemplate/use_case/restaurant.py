@@ -1,7 +1,7 @@
 from typing import Any
 
 from pytemplate.domain.models import Restaurant
-from src.pytemplate.service.restaurant import RestaurantService
+from pytemplate.service.restaurant import RestaurantService
 
 
 def restaurant(data: dict[str, Any], registry: dict[str, type[RestaurantService]]) -> Restaurant:
