@@ -26,7 +26,7 @@ def test_restaurant_chinese():
     data = {
         "cuisine": "Chinese",
         "city": {"name": "Beijing", "country": "China", "population": 21540000},
-        "dishes": [{"name": "Kung Pao Chicken", "price": 12.5}, {"name": "Sweet and Sour Pork", "price": 10.0}],
+        "dishes": [{"name": "Kung Pao Chicken", "price": 11.5}, {"name": "Sweet and Sour Pork", "price": 10.0}],
     }
     registry = {"Italian": ItalianRestaurantService, "Chinese": ChineseRestaurantService}
     rest = restaurant(data, registry)
