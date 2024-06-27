@@ -9,7 +9,7 @@ def test_restaurant_italian():
     data = {
         "cuisine": "Italian",
         "city": {"name": "Rome", "country": "Italy", "population": 2873000},
-        "dishes": [{"name": "Spaghetti Carbonara", "price": 15.5}, {"name": "Margherita Pizza", "price": 12.0}],
+        "dishes": [{"name": "Spaghetti Carbonara", "price": 16.5}, {"name": "Margherita Pizza", "price": 12.0}],
     }
     registry = {"Italian": ItalianRestaurantService, "Chinese": ChineseRestaurantService}
     rest = restaurant(data, registry)
