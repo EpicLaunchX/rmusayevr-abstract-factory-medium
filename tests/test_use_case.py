@@ -1,8 +1,8 @@
 import pytest
 
 from pytemplate.domain.models import Restaurant
-from src.pytemplate.service.restaurant import ChineseRestaurantService, ItalianRestaurantService
-from src.pytemplate.use_case.restaurant import restaurant
+from pytemplate.use_case.restaurant import restaurant
+from pytemplate.service.restaurant import ChineseRestaurantService, ItalianRestaurantService
 
 
 def test_restaurant_italian():
